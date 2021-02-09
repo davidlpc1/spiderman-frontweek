@@ -26,6 +26,9 @@ header {
         margin-left: 24px;
     }
 
+    @include responsive(){
+        display:none;
+    }
 }
 
 .logo{
@@ -71,6 +74,20 @@ header {
     }
 }
 
+.bx{
+    display:none;
+
+    @include responsive(){
+        display:block;
+        width: 48px;
+        height: 48px;
+    
+        background-color: $white;
+    
+        border-radius: 8px;
+    }
+}
+
 .nav-social{
     display:flex;
 
@@ -90,5 +107,9 @@ header {
                 transform:translate3d(0,-3px,0);
             }
         }
+    }
+
+    @include responsive(){
+        display:none;
     }
 }
